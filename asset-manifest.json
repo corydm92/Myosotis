@@ -1,13 +1,13 @@
 {
-  "main.css": "/Myosotis/static/css/main.0c3e8ba9.chunk.css",
-  "main.js": "/Myosotis/static/js/main.c359637b.chunk.js",
-  "main.js.map": "/Myosotis/static/js/main.c359637b.chunk.js.map",
+  "main.css": "/Myosotis/static/css/main.11a69d20.chunk.css",
+  "main.js": "/Myosotis/static/js/main.6a5fba0c.chunk.js",
+  "main.js.map": "/Myosotis/static/js/main.6a5fba0c.chunk.js.map",
   "runtime~main.js": "/Myosotis/static/js/runtime~main.8af68ee6.js",
   "runtime~main.js.map": "/Myosotis/static/js/runtime~main.8af68ee6.js.map",
-  "static/js/2.f38417d8.chunk.js": "/Myosotis/static/js/2.f38417d8.chunk.js",
-  "static/js/2.f38417d8.chunk.js.map": "/Myosotis/static/js/2.f38417d8.chunk.js.map",
+  "static/js/2.ba2189d6.chunk.js": "/Myosotis/static/js/2.ba2189d6.chunk.js",
+  "static/js/2.ba2189d6.chunk.js.map": "/Myosotis/static/js/2.ba2189d6.chunk.js.map",
   "index.html": "/Myosotis/index.html",
-  "precache-manifest.6fd111a37d8b2cf1e684408bc62ef4c1.js": "/Myosotis/precache-manifest.6fd111a37d8b2cf1e684408bc62ef4c1.js",
+  "precache-manifest.03b698cc473430aee2d420667a62ad93.js": "/Myosotis/precache-manifest.03b698cc473430aee2d420667a62ad93.js",
   "service-worker.js": "/Myosotis/service-worker.js",
-  "static/css/main.0c3e8ba9.chunk.css.map": "/Myosotis/static/css/main.0c3e8ba9.chunk.css.map"
+  "static/css/main.11a69d20.chunk.css.map": "/Myosotis/static/css/main.11a69d20.chunk.css.map"
 }
