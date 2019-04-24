@@ -8,7 +8,7 @@
 
 [] On new search, set store to initial values
 
-[] Center images in item details
+[ 4/24/19 ] Center images in item details
 
 [] Clean up inline css styling
 
