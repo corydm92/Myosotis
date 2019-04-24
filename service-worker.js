@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/corydm92/test123.git/precache-manifest.df5ff622ea631023f8a9479e304e7988.js"
+  "/corydm92/test654/precache-manifest.0eb584f3c503dc629b5482e842f53ef5.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/corydm92/test123.git/index.html", {
+workbox.routing.registerNavigationRoute("/corydm92/test654/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
