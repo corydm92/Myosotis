@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/corydm92/test654/precache-manifest.0eb584f3c503dc629b5482e842f53ef5.js"
+  "/Myosotis/precache-manifest.6fd111a37d8b2cf1e684408bc62ef4c1.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/corydm92/test654/index.html", {
+workbox.routing.registerNavigationRoute("/Myosotis/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });

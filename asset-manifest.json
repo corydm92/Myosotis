@@ -1,13 +1,13 @@
 {
-  "main.css": "/corydm92/test654/static/css/main.0c3e8ba9.chunk.css",
-  "main.js": "/corydm92/test654/static/js/main.6b014c24.chunk.js",
-  "main.js.map": "/corydm92/test654/static/js/main.6b014c24.chunk.js.map",
-  "runtime~main.js": "/corydm92/test654/static/js/runtime~main.94dd3dfc.js",
-  "runtime~main.js.map": "/corydm92/test654/static/js/runtime~main.94dd3dfc.js.map",
-  "static/js/2.318c083b.chunk.js": "/corydm92/test654/static/js/2.318c083b.chunk.js",
-  "static/js/2.318c083b.chunk.js.map": "/corydm92/test654/static/js/2.318c083b.chunk.js.map",
-  "index.html": "/corydm92/test654/index.html",
-  "precache-manifest.0eb584f3c503dc629b5482e842f53ef5.js": "/corydm92/test654/precache-manifest.0eb584f3c503dc629b5482e842f53ef5.js",
-  "service-worker.js": "/corydm92/test654/service-worker.js",
-  "static/css/main.0c3e8ba9.chunk.css.map": "/corydm92/test654/static/css/main.0c3e8ba9.chunk.css.map"
+  "main.css": "/Myosotis/static/css/main.0c3e8ba9.chunk.css",
+  "main.js": "/Myosotis/static/js/main.c359637b.chunk.js",
+  "main.js.map": "/Myosotis/static/js/main.c359637b.chunk.js.map",
+  "runtime~main.js": "/Myosotis/static/js/runtime~main.8af68ee6.js",
+  "runtime~main.js.map": "/Myosotis/static/js/runtime~main.8af68ee6.js.map",
+  "static/js/2.f38417d8.chunk.js": "/Myosotis/static/js/2.f38417d8.chunk.js",
+  "static/js/2.f38417d8.chunk.js.map": "/Myosotis/static/js/2.f38417d8.chunk.js.map",
+  "index.html": "/Myosotis/index.html",
+  "precache-manifest.6fd111a37d8b2cf1e684408bc62ef4c1.js": "/Myosotis/precache-manifest.6fd111a37d8b2cf1e684408bc62ef4c1.js",
+  "service-worker.js": "/Myosotis/service-worker.js",
+  "static/css/main.0c3e8ba9.chunk.css.map": "/Myosotis/static/css/main.0c3e8ba9.chunk.css.map"
 }
