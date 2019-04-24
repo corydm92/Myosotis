@@ -4,9 +4,15 @@
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",
+    "googleapis": "^27.0.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "2.1.8"
+    "react-google-calendar-api": "^1.0.10",
+    "react-redux": "^7.0.2",
+    "react-scripts": "2.1.8",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0",
+    "thunk": "0.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -22,5 +28,12 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "css-loader": "^2.1.1",
+    "moment": "^2.24.0",
+    "react-big-calendar": "^0.20.4",
+    "style-loader": "^0.23.1",
+    "superagent": "^5.0.2"
+  }
 }

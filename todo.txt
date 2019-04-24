@@ -1,0 +1,18 @@
+
+[] Center item loading details loader
+
+[] Add show/hide feature after details have been fetched
+
+[] Look up deploying using github pages from npm
+
+[] On new search, set store to initial values
+
+[] Center images in item details
+
+[] Clean up inline css styling
+
+[] See if memoizing is better than using .includes() for checking ids in plantListItemAction
+
+[] Add pagenation
+
+[] Create list for user to see added plants

@@ -1,0 +1,12 @@
+.plant-results.no-results {
+	text-align: center;
+	font-style: italic;
+}
+
+.plant-results-loader {
+	padding: 4em !important;
+}
+
+.plant-results.plant-name {
+	text-transform: capitalize;
+}

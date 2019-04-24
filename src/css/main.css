@@ -1,0 +1,60 @@
+* {
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100% !important;
+	margin-bottom: 1em;
+}
+
+.lrg-header {
+	font-size: 5em !important;
+}
+
+.med-font {
+	font-size: 1.4em !important;
+	padding: 10px 0;
+}
+
+.sm-font {
+	font-size: 1.2em !important;
+	padding: 0 0 5px;
+}
+
+/* FONT COLORS  */
+.font-main-green {
+	color: #698f3f !important;
+}
+
+.font-main-blue {
+	color: #68c5db !important;
+}
+
+.font-main-white {
+	color: #fbfcfd !important;
+}
+
+.font-off-white {
+	color: #edf2f4 !important;
+}
+
+.font-disabled {
+	color: gray !important;
+}
+
+/* BACKGROUND COLORS */
+.bg-main-green {
+	background-color: #698f3f;
+}
+
+.bg-main-blue {
+	background-color: #68c5db;
+}
+
+.bg-main-white {
+	background-color: #fbfcfd;
+}
+
+.bg-off-white {
+	background-color: #f3f3f3;
+}

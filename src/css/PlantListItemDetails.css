@@ -1,0 +1,9 @@
+.plant-details .img-wrapper {
+	text-align: center;
+	/* margin-left: auto; */
+}
+
+.plant-details .img-wrapper p {
+	text-align: left;
+	margin-bottom: 1em;
+}
