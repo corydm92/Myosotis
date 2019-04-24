@@ -1,5 +1,6 @@
 
 [] Center item loading details loader
+  // Used margin top 16px instead of flexing parent container, need to set fixed height but child card overflows. Need to figure out how to set height using state or store
 
 [] Add show/hide feature after details have been fetched
 
