@@ -4,3 +4,11 @@
 	align-items: center;
 	height: 100%;
 }
+
+.plant-list-item .hide {
+	display: none;
+}
+
+.ui.button.show {
+	margin-top: 16px;
+}

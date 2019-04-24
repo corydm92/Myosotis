@@ -12,8 +12,8 @@ import "../css/SearchBar.css";
 class SearchBar extends React.Component {
 	// Turn this off, just for testing
 	componentDidMount() {
-		this.props.isLoadingAction();
-		this.props.trefleQueryAction(this.props.searchTerm);
+		// this.props.isLoadingAction();
+		// this.props.trefleQueryAction(this.props.searchTerm);
 	}
 	handleOnChange(term) {
 		this.props.searchTermAction(term);

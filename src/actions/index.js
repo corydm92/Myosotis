@@ -37,3 +37,11 @@ export const plantListItemAction = id => async (dispatch, getState) => {
 	dispatch({ type: "PLANT_LIST_ITEM", payload: response.data });
 	dispatch({ type: "ITEM_DETAILS_DONE" });
 };
+
+export const addToCollectionAction = item => {
+	// console.log(item);
+	return {
+		type: "ADD_TO_COLLECTION",
+		payload: item
+	};
+};

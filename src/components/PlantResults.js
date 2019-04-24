@@ -19,7 +19,10 @@ class PlantResults extends React.Component {
 
 	handleNoResults() {
 		return (
-			<div className='plant-results no-results font-disabled med-font ui header'>
+			<div
+				style={{ marginTop: "1em" }}
+				className='plant-results no-results font-disabled med-font ui header'
+			>
 				No Results
 			</div>
 		);

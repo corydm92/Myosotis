@@ -1,21 +1,19 @@
 import React from "react";
-
-import SearchBar from "./SearchBar";
-import PlantResults from "./PlantResults";
+import { Route } from "react-router-dom";
 import Header from "./Header";
+import HomeLink from "./HomeLink";
+import CollectionLink from "./CollectionLink";
 import "../css/main.css";
 import "../css/App.css";
 
 class App extends React.Component {
 	render() {
 		return (
-			<div className='app-wrapper'>
+			<div className='app-wrapper bg-main-white'>
 				<Header />
 				<div className='ui container main-content'>
-					<SearchBar />
-					<div className='plant-results-wrapper'>
-						<PlantResults />
-					</div>
+					<Route exact path='/' component={HomeLink} />
+					<Route path='/collection' component={CollectionLink} />
 				</div>
 			</div>
 		);

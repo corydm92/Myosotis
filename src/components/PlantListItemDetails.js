@@ -1,4 +1,6 @@
 import React from "react";
+import { connect } from "react-redux";
+import { addToCollectionAction } from "../actions";
 
 import "../css/PlantListItemDetails.css";
 
@@ -19,16 +21,18 @@ const PlantListItemDetails = props => {
 		if (picList.length > 0) {
 			let tempList = [];
 			picList.forEach(pic => {
-				tempList.push(<img alt={pic.url} src={pic.url} />);
+				tempList.push(<img key={pic.url} alt={pic.url} src={pic.url} />);
 			});
 			return tempList;
 		}
 		return <p>Image: Not Available</p>;
 	}
 
+	console.log(props);
+
 	return (
 		<div
-			style={{ marginRight: "1em", marginBottom: "1em" }} // Gives card space on right and bottom
+			style={{ margin: "1em 0" }} // Gives card space on top and bottom
 			key={selectedItem.id}
 			className='plant-details ui segment'
 		>
@@ -36,8 +40,14 @@ const PlantListItemDetails = props => {
 
 			<p>Duration: {isNull(selectedItem.duration)}</p>
 			<p>Family: {isNull(selectedItem.family_common_name)}</p>
+			<button onClick={() => props.addToCollectionAction(props.selectedItem)}>
+				Add To Collection
+			</button>
 		</div>
 	);
 };
 
-export default PlantListItemDetails;
+export default connect(
+	null,
+	{ addToCollectionAction }
+)(PlantListItemDetails);

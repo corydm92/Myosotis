@@ -44,17 +44,17 @@ img {
 
 /* BACKGROUND COLORS */
 .bg-main-green {
-	background-color: #698f3f;
+	background-color: #698f3f !important;
 }
 
 .bg-main-blue {
-	background-color: #68c5db;
+	background-color: #68c5db !important;
 }
 
 .bg-main-white {
-	background-color: #fbfcfd;
+	background-color: #fbfcfd !important;
 }
 
 .bg-off-white {
-	background-color: #f3f3f3;
+	background-color: #f3f3f3 !important;
 }

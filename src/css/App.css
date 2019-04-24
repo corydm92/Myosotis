@@ -2,6 +2,7 @@
 	padding-top: 99px;
 }
 
-.plant-results-wrapper {
-	margin-top: 66px;
+a,
+a:hover {
+	color: inherit;
 }
