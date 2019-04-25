@@ -82,7 +82,6 @@ class PlantListItem extends React.Component {
 						style={{
 							// INLINE STYLING
 							display: "inline-block",
-							// maxWidth: "225px",
 							lineHeight: "1.2em"
 						}}
 						onClick={this.handleSelectedItem}

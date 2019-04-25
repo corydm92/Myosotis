@@ -1,6 +1,7 @@
 import trefle from "../apis/trefle";
 
 export const searchTerm = term => {
+	console.log(term);
 	return {
 		type: "SEARCH_TERM",
 		payload: term

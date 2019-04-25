@@ -18,17 +18,18 @@ class SearchBar extends React.Component {
 	handleSubmit = e => {
 		e.preventDefault();
 		this.props.isLoading();
-		this.props.trefleQuery(this.props.searchTerm);
+		this.props.trefleQuery(this.props.term);
 	};
 
 	render() {
+		console.log(this.props);
 		return (
 			<div className='search-bar-wrapper bg-main-white'>
 				<form onSubmit={this.handleSubmit}>
 					<div className='ui fluid icon input'>
 						<input
 							onChange={e => this.handleOnChange(e.target.value)}
-							value={this.props.searchTerm}
+							value={this.props.term}
 							type='text'
 							placeholder='Search for a plant...'
 						/>
@@ -42,7 +43,7 @@ class SearchBar extends React.Component {
 
 const mapStateToProps = state => {
 	return {
-		searchTerm: state.searchTerm
+		term: state.searchTerm
 	};
 };
 

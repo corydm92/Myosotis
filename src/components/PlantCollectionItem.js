@@ -39,7 +39,6 @@ class PlantListItem extends React.Component {
 						style={{
 							// INLINE STYLING
 							display: "inline-block",
-							maxWidth: "225px",
 							lineHeight: "1.2em"
 						}}
 						className='plant-results plant-name header font-main-green med-font'
