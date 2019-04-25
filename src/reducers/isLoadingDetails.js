@@ -1,6 +1,6 @@
 const init = { bool: false, id: null };
 
-const isLoadingDetailsReducer = (state = init, action) => {
+const isLoadingDetails = (state = init, action) => {
 	switch (action.type) {
 		case "ITEM_DETAILS_LOADING":
 			return { bool: true, id: action.payload };
@@ -11,4 +11,4 @@ const isLoadingDetailsReducer = (state = init, action) => {
 	}
 };
 
-export default isLoadingDetailsReducer;
+export default isLoadingDetails;

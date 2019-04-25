@@ -1,5 +1,5 @@
 import React from "react";
-import PlantListItem from "./PlantListItem";
+import PlantCollectionItem from "./PlantCollectionItem";
 import { connect } from "react-redux";
 
 class PlantCollection extends React.Component {
@@ -18,11 +18,12 @@ class PlantCollection extends React.Component {
 
 		return collection.map(item => {
 			console.log(item);
-			return <PlantListItem key={item.id} item={item} />;
+			return <PlantCollectionItem key={item.id} item={item} />;
 		});
 	}
 
 	render() {
+		console.log(this.props);
 		let { collection } = this.props;
 
 		if (!collection) {

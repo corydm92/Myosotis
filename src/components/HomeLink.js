@@ -4,7 +4,7 @@ import SearchBar from "./SearchBar";
 import PlantResults from "./PlantResults";
 const HomeLink = props => {
 	return (
-		<div className='home-link'>
+		<div style={{ maxWidth: "100%" }} className='home-link'>
 			<SearchBar />
 			<NavBar marginTop='66px' />
 			<div className='plant-results-wrapper'>

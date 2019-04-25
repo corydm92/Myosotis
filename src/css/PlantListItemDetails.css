@@ -6,3 +6,8 @@
 	text-align: left;
 	margin-bottom: 1em;
 }
+
+.add-to-collection-wrapper {
+	display: flex;
+	justify-content: center;
+}

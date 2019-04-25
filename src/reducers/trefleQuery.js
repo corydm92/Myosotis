@@ -1,4 +1,4 @@
-const trefleQueryReducer = (state = null, action) => {
+const trefleQuery = (state = null, action) => {
 	switch (action.type) {
 		case "TREFLE_QUERY":
 			return action.payload;
@@ -7,4 +7,4 @@ const trefleQueryReducer = (state = null, action) => {
 	}
 };
 
-export default trefleQueryReducer;
+export default trefleQuery;

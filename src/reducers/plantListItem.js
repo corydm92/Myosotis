@@ -1,4 +1,4 @@
-const plantListItemReducer = (state = [], action) => {
+const plantListItem = (state = [], action) => {
 	switch (action.type) {
 		case "PLANT_LIST_ITEM":
 			return [...state, action.payload];
@@ -7,4 +7,4 @@ const plantListItemReducer = (state = [], action) => {
 	}
 };
 
-export default plantListItemReducer;
+export default plantListItem;

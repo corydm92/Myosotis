@@ -3,4 +3,23 @@
 	width: calc(100% - 2em);
 	padding: 1em 0;
 	z-index: 1000;
+	/* width: 100%; */
+}
+
+@media screen and (min-width: 723px) {
+	.search-bar-wrapper {
+		max-width: 723px;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.search-bar-wrapper {
+		max-width: 933px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.search-bar-wrapper {
+		max-width: 1127px;
+	}
 }

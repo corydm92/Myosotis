@@ -1,28 +1,24 @@
 import React from "react";
 import { connect } from "react-redux";
 
-import {
-	searchTermAction,
-	trefleQueryAction,
-	isLoadingAction
-} from "../actions";
+import { searchTerm, trefleQuery, isLoading } from "../actions";
 
 import "../css/SearchBar.css";
 
 class SearchBar extends React.Component {
-	// Turn this off, just for testing
 	componentDidMount() {
-		// this.props.isLoadingAction();
-		// this.props.trefleQueryAction(this.props.searchTerm);
+		// Turn this off, just for testing
+		// this.props.isLoading();
+		// this.props.trefleQuery(this.props.searchTerm);
 	}
 	handleOnChange(term) {
-		this.props.searchTermAction(term);
+		this.props.searchTerm(term);
 	}
 
 	handleSubmit = e => {
 		e.preventDefault();
-		this.props.isLoadingAction();
-		this.props.trefleQueryAction(this.props.searchTerm);
+		this.props.isLoading();
+		this.props.trefleQuery(this.props.searchTerm);
 	};
 
 	render() {
@@ -52,5 +48,5 @@ const mapStateToProps = state => {
 
 export default connect(
 	mapStateToProps,
-	{ searchTermAction, trefleQueryAction, isLoadingAction }
+	{ searchTerm, trefleQuery, isLoading }
 )(SearchBar);

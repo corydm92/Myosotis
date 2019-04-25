@@ -1,4 +1,4 @@
-const previousDetailsIdsReducer = (state = [], action) => {
+const previousDetailsIds = (state = [], action) => {
 	switch (action.type) {
 		case "PREVIOUS_DETAIL_IDS":
 			return [...state, action.payload];
@@ -7,4 +7,4 @@ const previousDetailsIdsReducer = (state = [], action) => {
 	}
 };
 
-export default previousDetailsIdsReducer;
+export default previousDetailsIds;

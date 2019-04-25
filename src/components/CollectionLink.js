@@ -8,7 +8,6 @@ class CollectionLink extends React.Component {
 		return (
 			<div className='collection-link'>
 				<NavBar />
-
 				<PlantCollection />
 			</div>
 		);

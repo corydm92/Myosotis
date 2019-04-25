@@ -10,13 +10,13 @@ class NavBar extends React.Component {
 				style={{ marginTop: this.props.marginTop }}
 				className='nav-bar two ui buttons'
 			>
-				<button className='ui button'>
-					<Link to='/'>Search</Link>
-				</button>
+				<Link className='ui button' to='/'>
+					Search
+				</Link>
 
-				<button className='ui button'>
-					<Link to='/collection'>Collection</Link>
-				</button>
+				<Link className='ui button' to='/collection'>
+					Collection
+				</Link>
 			</div>
 		);
 	}

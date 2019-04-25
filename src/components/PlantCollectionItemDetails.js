@@ -1,10 +1,10 @@
 import React from "react";
 import { connect } from "react-redux";
-import { addToCollection } from "../actions";
+import { addToCollection, removeFromCollection } from "../actions";
 
 import "../css/PlantListItemDetails.css";
 
-const PlantListItemDetails = props => {
+const PlantCollectionItemDetails = props => {
 	let { selectedItem } = props;
 
 	function isNull(str) {
@@ -12,35 +12,6 @@ const PlantListItemDetails = props => {
 			return "Not Available";
 		}
 		return str;
-	}
-
-	function handleAddToCollection() {
-		let pass = false;
-
-		if (props.collection.length > 0) {
-			props.collection.map(item => {
-				if (item.id === props.selectedItem.id) {
-					pass = true;
-				}
-			});
-		}
-
-		if (pass === true) {
-			return (
-				<p className='sm-font font-main-green'>
-					Item in Collection <i class='check icon' />
-				</p>
-			);
-		}
-
-		return (
-			<button
-				className='ui button bg-main-green font-main-white'
-				onClick={() => props.addToCollection(props.selectedItem)}
-			>
-				Add To Collection
-			</button>
-		);
 	}
 
 	function handlePictures(picList) {
@@ -66,7 +37,14 @@ const PlantListItemDetails = props => {
 
 			<p>Duration: {isNull(selectedItem.duration)}</p>
 			<p>Family: {isNull(selectedItem.family_common_name)}</p>
-			<div className='add-to-collection-wrapper'>{handleAddToCollection()}</div>
+			<div className='add-to-collection-wrapper'>
+				<button
+					className='ui button red font-main-white'
+					onClick={() => props.removeFromCollection(props.selectedItem.id)}
+				>
+					Remove From Collection
+				</button>
+			</div>
 		</div>
 	);
 };
@@ -77,5 +55,5 @@ const mapStateToProps = state => {
 
 export default connect(
 	mapStateToProps,
-	{ addToCollection }
-)(PlantListItemDetails);
+	{ addToCollection, removeFromCollection }
+)(PlantCollectionItemDetails);

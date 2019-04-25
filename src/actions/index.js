@@ -1,32 +1,39 @@
 import trefle from "../apis/trefle";
 
-export const searchTermAction = term => {
+export const searchTerm = term => {
 	return {
 		type: "SEARCH_TERM",
 		payload: term
 	};
 };
 
-export const isLoadingAction = () => {
+export const isLoading = () => {
 	return {
 		type: "IS_LOADING"
 	};
 };
 
-export const isLoadingDetailsAction = id => {
+export const isLoadingDetails = id => {
 	return {
 		type: "ITEM_DETAILS_LOADING",
 		payload: id
 	};
 };
 
-export const trefleQueryAction = query => async dispatch => {
+export const removeFromCollection = id => {
+	return {
+		type: "REMOVE_FROM_COLLECTION",
+		payload: id
+	};
+};
+
+export const trefleQuery = query => async dispatch => {
 	const response = await trefle.get("", { params: { q: query } });
 	dispatch({ type: "TREFLE_QUERY", payload: response.data });
 	dispatch({ type: "DONE_LOADING" });
 };
 
-export const plantListItemAction = id => async (dispatch, getState) => {
+export const plantListItem = id => async (dispatch, getState) => {
 	if (getState().previousDetailIds.includes(id)) {
 		dispatch({ type: "ITEM_DETAILS_DONE" });
 		return null;
@@ -38,8 +45,7 @@ export const plantListItemAction = id => async (dispatch, getState) => {
 	dispatch({ type: "ITEM_DETAILS_DONE" });
 };
 
-export const addToCollectionAction = item => {
-	// console.log(item);
+export const addToCollection = item => {
 	return {
 		type: "ADD_TO_COLLECTION",
 		payload: item

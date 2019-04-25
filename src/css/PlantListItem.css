@@ -12,3 +12,20 @@
 .ui.button.show {
 	margin-top: 16px;
 }
+
+.plant-results.plant-name {
+	transition: all;
+	transition-duration: 250ms;
+	max-width: 150px;
+}
+
+.plant-results.plant-name:hover {
+	cursor: pointer;
+	opacity: 0.8;
+}
+
+@media screen and (min-width: 414px) {
+	.plant-results.plant-name {
+		max-width: 300px;
+	}
+}

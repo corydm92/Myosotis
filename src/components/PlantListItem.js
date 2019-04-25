@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import { plantListItemAction, isLoadingDetailsAction } from "../actions";
+import { plantListItem, isLoadingDetails } from "../actions";
 import PlantListItemDetails from "./PlantListItemDetails";
 
 import "../css/PlantListItem.css";
@@ -13,10 +13,9 @@ const styles = {
 };
 
 class PlantListItem extends React.Component {
-	state = { height: "64px" };
 	handleSelectedItem = () => {
-		this.props.isLoadingDetailsAction(this.props.item.id);
-		this.props.plantListItemAction(this.props.item.id);
+		this.props.isLoadingDetails(this.props.item.id);
+		this.props.plantListItem(this.props.item.id);
 	};
 
 	handleLoader() {
@@ -83,7 +82,7 @@ class PlantListItem extends React.Component {
 						style={{
 							// INLINE STYLING
 							display: "inline-block",
-							maxWidth: "225px",
+							// maxWidth: "225px",
 							lineHeight: "1.2em"
 						}}
 						onClick={this.handleSelectedItem}
@@ -104,7 +103,6 @@ class PlantListItem extends React.Component {
 }
 
 const mapStateToProps = state => {
-	// console.log(state);
 	return {
 		selectedItems: state.plantListItems,
 		isLoadingDetails: state.isLoadingDetails
@@ -113,5 +111,5 @@ const mapStateToProps = state => {
 
 export default connect(
 	mapStateToProps,
-	{ plantListItemAction, isLoadingDetailsAction }
+	{ plantListItem, isLoadingDetails }
 )(PlantListItem);

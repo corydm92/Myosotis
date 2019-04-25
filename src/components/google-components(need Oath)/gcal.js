@@ -3,7 +3,7 @@ import axios from "axios";
 
 const CALENDAR_ID =
 	"corymorrissey.com_vl11st3h0gptg9kadpgj7o5il4@group.calendar.google.com";
-const API_KEY = "api key";
+const API_KEY = "apikey";
 let url = `https://www.googleapis.com/calendar/v3/calendars/${CALENDAR_ID}/events?key=${API_KEY}`;
 
 export function getEvents(callback) {

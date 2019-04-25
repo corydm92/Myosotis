@@ -2,9 +2,9 @@
 [] Center item loading details loader
   // Used margin top 16px instead of flexing parent container, need to set fixed height but child card overflows. Need to figure out how to set height using state or store
 
-[] Add show/hide feature after details have been fetched
+[ 4/24/19 ] Add show/hide feature after details have been fetched
 
-[] Look up deploying using github pages from npm
+[ 4/24/19 ] Look up deploying using github pages from npm
 
 [] On new search, set store to initial values
 
@@ -16,4 +16,10 @@
 
 [] Add pagenation
 
-[] Create list for user to see added plants
+[ 4/24/19 ] Create list for user to see added plants
+
+[] Collection inheriting show/hide already open, also inheriting add to collection (add spinning bar with checkmark added to collection), center button
+
+[] Nav Bar Buttons only work when clicking text
+
+[] clear current search after get request

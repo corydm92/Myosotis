@@ -8,11 +8,8 @@ import "../css/PlantResults.css";
 class PlantResults extends React.Component {
 	handleIsLoading() {
 		return (
-			<div className='plant-results-loader ui segment'>
-				<div className='ui active inverted dimmer'>
-					<div className='ui text loader'>Loading</div>
-				</div>
-				<p />
+			<div className='plant-results-loader  ui active inverted dimmer'>
+				<div className='ui text loader'>Loading</div>
 			</div>
 		);
 	}
