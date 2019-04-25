@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/Myosotis/precache-manifest.5c6961030b4a5bb20d375f1cecd94ab9.js"
+  "/Myosotis/precache-manifest.48f813e85aab6285774b577d563bf53c.js"
 );
 
 workbox.clientsClaim();
