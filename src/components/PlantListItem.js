@@ -4,6 +4,7 @@ import { plantListItem, isLoadingDetails } from "../actions";
 import PlantListItemDetails from "./PlantListItemDetails";
 
 import "../css/PlantListItem.css";
+import isLoading from "../reducers/isLoading";
 
 const styles = {
 	// Used for setting item height, allowing flex for loader / button. Not working so far.
@@ -19,9 +20,11 @@ class PlantListItem extends React.Component {
 	};
 
 	handleLoader() {
-		let { isLoadingDetails, item } = this.props;
+		let { loadingDetails, item } = this.props;
+		console.log(loadingDetails.id);
+		console.log(loadingDetails);
 
-		if (isLoadingDetails.bool === true && item.id === isLoadingDetails.id) {
+		if (loadingDetails.bool && item.id === loadingDetails.id) {
 			return (
 				<div className='loader-wrapper right floated content'>
 					<div
@@ -104,7 +107,7 @@ class PlantListItem extends React.Component {
 const mapStateToProps = state => {
 	return {
 		selectedItems: state.plantListItems,
-		isLoadingDetails: state.isLoadingDetails
+		loadingDetails: state.isLoadingDetails
 	};
 };
 

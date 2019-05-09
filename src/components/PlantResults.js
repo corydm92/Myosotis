@@ -55,7 +55,6 @@ class PlantResults extends React.Component {
 }
 
 const mapStateToProps = state => {
-	console.log(state);
 	return {
 		plantResults: state.currentSearch,
 		isLoading: state.isLoading

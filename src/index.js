@@ -6,8 +6,17 @@ import thunk from "redux-thunk";
 import reducers from "./reducers";
 import { Route, HashRouter } from "react-router-dom";
 import App from "./components/App";
+import { composeWithDevTools } from "redux-devtools-extension";
 
-let store = createStore(reducers, applyMiddleware(thunk));
+// let store = createStore(reducers, applyMiddleware(thunk));
+
+const store = createStore(
+	reducers,
+	composeWithDevTools(
+		applyMiddleware(thunk)
+		// other store enhancers if any
+	)
+);
 
 ReactDOM.render(
 	<HashRouter>

@@ -34,6 +34,13 @@ export const trefleQuery = query => async dispatch => {
 	dispatch({ type: "DONE_LOADING" });
 };
 
+// export const trefleQuery = query => {
+// 	return trefle
+// 		.get("", { params: { q: query } })
+// 		.then(res => console.log(res))
+// 		.catch(err => console.log(err));
+// };
+
 export const plantListItem = id => async (dispatch, getState) => {
 	if (getState().previousDetailIds.includes(id)) {
 		dispatch({ type: "ITEM_DETAILS_DONE" });
